@@ -1,0 +1,192 @@
+/* Galaxy Page Specific Styles */
+:root {
+    --galaxy-purple: #8B4FFF;
+    --galaxy-blue: #1E90FF;
+    --galaxy-pink: #FF69B4;
+    --galaxy-dark: #0A0A2A;
+    --galaxy-light: #E6E6FA;
+}
+
+.galaxies-intro {
+    background: linear-gradient(135deg, var(--galaxy-dark), #000);
+    padding: 4rem 2rem;
+    color: var(--galaxy-light);
+}
+
+.intro-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.intro-content h3 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: var(--galaxy-purple);
+    text-shadow: 0 0 10px rgba(139, 79, 255, 0.5);
+}
+
+.intro-content p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+
+.galaxies-gallery {
+    padding: 4rem 2rem;
+    background: var(--galaxy-dark);
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.galaxy-card {
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    box-shadow: 0 0 20px rgba(139, 79, 255, 0.2);
+}
+
+.galaxy-card:hover {
+    transform: scale(1.05);
+}
+
+.galaxy-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.galaxy-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 1.5rem;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.9));
+    color: white;
+}
+
+.galaxy-info h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: var(--galaxy-purple);
+}
+
+.galaxy-info p {
+    margin-bottom: 0.5rem;
+}
+
+.distance {
+    font-size: 0.9rem;
+    color: var(--galaxy-blue);
+}
+
+.galaxy-types {
+    padding: 4rem 2rem;
+    background: linear-gradient(45deg, var(--galaxy-dark), #000);
+    color: var(--galaxy-light);
+}
+
+.types-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 2rem auto 0;
+}
+
+.type-card {
+    padding: 2rem;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    backdrop-filter: blur(5px);
+    transition: transform 0.3s ease;
+}
+
+.type-card:hover {
+    transform: translateY(-10px);
+}
+
+.type-card i {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: var(--galaxy-purple);
+}
+
+.type-card h4 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--galaxy-blue);
+}
+
+.galaxy-facts {
+    padding: 4rem 2rem;
+    background: var(--galaxy-dark);
+    color: var(--galaxy-light);
+}
+
+.facts-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 2rem auto 0;
+}
+
+.fact-card {
+    padding: 2rem;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    backdrop-filter: blur(5px);
+    transition: transform 0.3s ease;
+}
+
+.fact-card:hover {
+    transform: scale(1.05);
+}
+
+.fact-card i {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: var(--galaxy-pink);
+}
+
+.fact-card h4 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    color: var(--galaxy-blue);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .intro-content h3 {
+        font-size: 2rem;
+    }
+
+    .galaxy-card {
+        margin: 0 auto;
+        max-width: 400px;
+    }
+
+    .type-card, .fact-card {
+        padding: 1.5rem;
+    }
+}
+
+/* Animation */
+@keyframes starTwinkle {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+}
+
+.galaxy-card i {
+    animation: starTwinkle 2s infinite;
+} 
