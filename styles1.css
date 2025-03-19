@@ -1177,6 +1177,7 @@ footer {
 .cosmic-image {
     position: relative;
     overflow: hidden;
+    
 }
 
 .cosmic-image img {
