@@ -674,6 +674,12 @@ footer {
 
 .signup-form .btn {
     padding: 1rem 2rem;
+    transition: transform 0.3s, background-color 0.3s,  box-shadow 0.3s;
+}
+.signup-form .btn:active {
+    transform: scale(0.9); /* Button shrinks slightly on click */
+    background-color: #005A9E; /* Darker blue for feedback */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 1);
 }
 
 /* About Page Styles */
@@ -2276,41 +2282,5 @@ footer {
     #simulation-canvas {
         min-height: 300px;
     }
-}
-/* path-map.html*/
-/* Path Map Styles */
-.path-map {
-    padding: 100px;
-    text-align: center;
-    background-color: var(--space-gray);
-    color: var(--text-light);
-    font-family: 'Sigmar', sans-serif;
-}
-
-.path-map h2 {
-    font-size: 2.5rem;
-    margin-bottom: 15px;
-    color: var(--space-black);
-}
-
-.path-map p {
-    font-size: 1.2rem;
-    line-height: 1.6;
-    margin-bottom: 20px;
-}
-
-.map-container {
-    margin: 20px auto;
-    max-width: 800px;
-    border: 2px solid #ddd;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.map-container img {
-    width: 100%;
-    height: auto;
-    display: block;
 }
 
