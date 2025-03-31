@@ -47,6 +47,7 @@
     transition: all 0.4s ease;
     backdrop-filter: blur(10px);
     border: 1px solid var(--glass-effect);
+    
 }
 
 .planet-card:hover {
