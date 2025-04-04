@@ -16,7 +16,7 @@ body {
     background-color: var(--space-black);
     color: var(--text-light);
     line-height: 1.6;
-    cursor: url('cursor (2).cur'), auto;
+    cursor: url('cursor.cur'), auto;
 }
 
 /* Header */
@@ -136,6 +136,7 @@ nav ul li a:hover::after {
     border-radius: 4px;
     transition: all 0.3s ease;
     border: 2px solid transparent;
+    cursor: pointer;
     
 }
 
@@ -210,6 +211,7 @@ footer {
     justify-content: center;
     align-items: center;
     z-index: 1;
+    
 }
 
 .video-bg {
@@ -218,7 +220,8 @@ footer {
     left: 50%;
     width: 100vw;
     height: 100vh;
-    transform: translate(-50%, -50%);
+    
+    transform: translate(-50%, -30%);
     pointer-events: none;
     z-index: -1;
     overflow: hidden;
@@ -2043,9 +2046,9 @@ footer {
     width: 100%;
     height: 6px;
     background: var(--nasa-blue);
-    border-radius: 3px;
+    border-radius: 3px; 
     outline: none;
-    -webkit-appearance: none;
+    
 }
 
 .control-group input[type="range"]::-webkit-slider-thumb {
