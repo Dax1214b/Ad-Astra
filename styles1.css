@@ -16,7 +16,7 @@ body {
     background-color: var(--space-black);
     color: var(--text-light);
     line-height: 1.6;
-    cursor: url('cursor.cur'), auto;
+    cursor: url('cursor (2).cur'), auto;
 }
 
 /* Header */
@@ -193,6 +193,7 @@ nav ul li a:hover::after {
 /* Footer */
 footer {
     text-align: center;
+    
     padding: 2rem;
     background: var(--space-black);
     color: var(--text-gray);
@@ -348,7 +349,7 @@ footer {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    width: 2px;
+    width: 2px  ;
     height: 100%;
     background: var(--nasa-blue);
 }
