@@ -9,6 +9,7 @@
 }
 
 /* General Styles */
+/*dgfg*/
 body {
     font-family: 'sigmar', Arial, sans-serif;
     margin: 0;
@@ -17,6 +18,7 @@ body {
     color: var(--text-light);
     line-height: 1.6;
     cursor: url('cursor (2).cur'), auto;
+    padding-left: 0;
 }
 
 /* Header */
