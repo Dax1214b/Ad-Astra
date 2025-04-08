@@ -131,19 +131,20 @@ nav ul li a:hover::after {
 .btn {
     display: inline-block;
     padding: 1rem 2rem;
-    background: var(--nasa-blue);
-    color: var(--text-light);
+    background: transparent;
+    border-color: var(--nasa-blue) ;
+    color:var(--text-light);
     text-decoration: none;
     font-weight: 500;
     border-radius: 4px;
     transition: all 0.3s ease;
-    border: 2px solid transparent;
+    border: 2px solid var(--nasa-blue) ;
     cursor: pointer;
     
 }
 
 .btn:hover {
-    background: transparent;
+    background: var(--nasa-blue) ;
     border-color: var(--nasa-blue);
     transform: translateY(-2px);    
 }
