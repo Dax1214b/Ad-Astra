@@ -84,6 +84,29 @@ nav ul li a:hover {
 nav ul li a:hover::after {
     width: 100%;
 }
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100vh;
+    background-color: rgba(var(--space-black),0.4);
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.sidebar li{
+    width: 100%;
+}
+.sidebar a{
+    width: 100%;
+}
 
 /* Hero Section */
 .hero {
@@ -96,7 +119,9 @@ nav ul li a:hover::after {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    
 }
+
 .Ad-Astra{
     color: var(--text-light);
     margin-bottom: 1rem;
@@ -119,6 +144,9 @@ nav ul li a:hover::after {
     font-weight: 700;
     line-height: 1.2;
     max-width: 800px;
+    animation: upcoming 0.6s ease-in 1s forwards;
+    opacity: 0;
+    pointer-events: none;
 }
 
 .hero p {
@@ -126,6 +154,9 @@ nav ul li a:hover::after {
     margin-bottom: 2rem;
     color: var(--text-gray);
     max-width: 600px;
+    animation: upcoming 0.6s ease-in 1s forwards;
+    opacity: 0;
+    pointer-events: none;
 }
 
 .btn {
@@ -140,7 +171,20 @@ nav ul li a:hover::after {
     transition: all 0.3s ease;
     border: 2px solid var(--nasa-blue) ;
     cursor: pointer;
+    animation: upcoming 0.6s ease-in 1s forwards;
+    opacity: 0;
     
+}
+
+@keyframes upcoming {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .btn:hover {
