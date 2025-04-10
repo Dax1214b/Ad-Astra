@@ -8,8 +8,7 @@
     --text-gray: #adb5bd;
 }
 
-/* General Styles */
-/*dgfg*/
+
 body {
     font-family: 'Winky Sans', Arial, sans-serif;
     margin: 0;
@@ -106,7 +105,7 @@ nav ul li a:hover::after {
     text-align: left;
     padding: 200px 10% 100px;
     background: linear-gradient(rgba(11, 13, 23, 0.8), rgba(11, 13, 23, 0.9)),
-                url('https://imageio.forbes.com/specials-images/imageserve/5f0d7a0a72fadb0007eded4a/0x0.jpg?format=jpg&crop=1515,852,x560,y243,safe&width=1200')
+                url('indexpageimage.webp')
                  no-repeat center center/cover;
     display: flex;
     flex-direction: column;
@@ -201,7 +200,7 @@ nav ul li a:hover::after {
 }
 
 .feature p {
-    color: whitesmoke;
+    color: goldenrod;
     font-size: 1rem;
 }
 
