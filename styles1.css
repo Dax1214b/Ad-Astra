@@ -1,4 +1,4 @@
-/* Variables */
+
 :root {
     --nasa-blue: #105bd8;
     --nasa-red: #fc3d21;
@@ -8,8 +8,7 @@
     --text-gray: #adb5bd;
 }
 
-/* General Styles */
-/*dgfggg*/
+
 
 body {
     font-family: 'Winky Sans', Arial, sans-serif;
@@ -1619,12 +1618,14 @@ footer {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
     margin-top: 2rem;
+    
 }
 
 .instrument-card {
     background: rgba(255, 255, 255, 0.05);
     border-radius: 8px;
     overflow: hidden;
+    
     transition: transform 0.3s ease;
 }
 
@@ -1636,6 +1637,7 @@ footer {
     width: 100%;
     height: 200px;
     object-fit: cover;
+    border-radius: 5%;
 }
 
 .instrument-card h3 {
