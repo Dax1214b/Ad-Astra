@@ -8,12 +8,6 @@
     --text-gray: #adb5bd;
 }
 
-<<<<<<< HEAD
-/* General Styles */
-/*dgfggg*/
-=======
-
->>>>>>> 94d8ca539885574fbf69071e7f0365180b3f2590
 body {
     font-family: 'Winky Sans', Arial, sans-serif;
     margin: 0;
@@ -1622,12 +1616,14 @@ footer {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
     margin-top: 2rem;
+    
 }
 
 .instrument-card {
     background: rgba(255, 255, 255, 0.05);
     border-radius: 8px;
     overflow: hidden;
+    
     transition: transform 0.3s ease;
 }
 
@@ -1639,6 +1635,7 @@ footer {
     width: 100%;
     height: 200px;
     object-fit: cover;
+    border-radius: 5%;
 }
 
 .instrument-card h3 {
