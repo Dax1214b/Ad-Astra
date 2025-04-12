@@ -1,5 +1,4 @@
-
-:root {
+    :root {
     --nasa-blue: #105bd8;
     --nasa-red: #fc3d21;
     --space-black: #0b0d17;
@@ -233,6 +232,7 @@ footer {
 .social-links a:hover {
     color: #1abc9c;
 }
+
 
 .useful-links {
     margin-top: 20px;
