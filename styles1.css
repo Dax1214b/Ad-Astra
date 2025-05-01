@@ -16,7 +16,7 @@ body {
     background-color: var(--space-black);
     color: var(--text-light);
     line-height: 1.6;
-    cursor: url('cursor (2).cur'), auto;
+    cursor: url('skybluecur.png'), auto;
     padding-left: 0;
 }
 body h1  {
