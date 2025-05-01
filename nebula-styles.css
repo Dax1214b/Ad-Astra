@@ -43,6 +43,7 @@
     margin-bottom: 1.5rem;
     background: linear-gradient(120deg, var(--nebula-pink), var(--nebula-purple));
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     text-shadow: var(--nebula-glow);
 }
@@ -161,6 +162,7 @@
     margin-bottom: 1.5rem;
     background: linear-gradient(120deg, var(--nebula-pink), var(--nebula-purple));
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
